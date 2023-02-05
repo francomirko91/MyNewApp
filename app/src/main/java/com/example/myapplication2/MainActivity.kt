@@ -18,27 +18,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         imageId = arrayOf(
-            R.drawable.giove,
-            R.drawable.marte,
             R.drawable.mercurio,
+            R.drawable.venere,
+            R.drawable.terra,
+            R.drawable.marte,
+            R.drawable.giove,
+            R.drawable.saturno,
+            R.drawable.urano,
             R.drawable.nettuno,
             R.drawable.pluto,
-            R.drawable.saturno,
-            R.drawable.terra,
-            R.drawable.urano,
-            R.drawable.venere,
         )
 
         heading = arrayOf(
-            "this planet is Jupiter",
-            "this planet is Mars",
-            "this planet is Mercury",
-            "this planet is Neptune",
-            "this planet is Pluto",
-            "this planet is Saturn",
-            "this planet is Earth",
-            "this planet is Uran",
-            "this planet is Venus",
+            "This planet is Mercury",
+            "This planet is Venus",
+            "This planet is Earth",
+            "This planet is Mars",
+            "This planet is Jupiter",
+            "This planet is Saturn",
+            "This planet is Uran",
+            "This planet is Neptune",
+            "This planet is Pluto",
         )
 
         newRecyclerView = findViewById(R.id.my_recycle_view)

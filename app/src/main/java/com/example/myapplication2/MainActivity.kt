@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var imageId: Array<Int>
     lateinit var heading: Array<String>
     lateinit var distance: Array<String>
+    lateinit var km: Array<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +55,18 @@ class MainActivity : AppCompatActivity() {
             "Distance from the sun",
         )
 
+        km = arrayOf(
+            "57.910.000 km",
+            "108.209.000 km",
+            "149.600.000 km",
+            "227.944.000 km",
+            "778.400.000 km",
+            "1.426.670.000 km",
+            "2.870.660.000 km",
+            "4.498.400.000 km",
+            "39.44 UA",
+        )
+
 
 
         newRecyclerView = findViewById(R.id.my_recycle_view)
@@ -69,7 +82,7 @@ class MainActivity : AppCompatActivity() {
     private fun getData() {
         for (i in imageId.indices) {
 
-            val news = News(imageId[i], heading[i],distance[i])
+            val news = News(imageId[i], heading[i],distance[i],km[i])
             newArrayList.add(news)
 
 

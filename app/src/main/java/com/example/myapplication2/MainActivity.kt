@@ -30,15 +30,15 @@ class MainActivity : AppCompatActivity() {
         )
 
         heading = arrayOf(
-            "This planet is Mercury",
-            "This planet is Venus",
-            "This planet is Earth",
-            "This planet is Mars",
-            "This planet is Jupiter",
-            "This planet is Saturn",
-            "This planet is Uran",
-            "This planet is Neptune",
-            "This planet is Pluto",
+            "Mercury",
+            "Venus",
+            "Earth",
+            "Mars",
+            "Jupiter",
+            "Saturn",
+            "Uran",
+            "Neptune",
+            "Pluto",
         )
 
         newRecyclerView = findViewById(R.id.my_recycle_view)

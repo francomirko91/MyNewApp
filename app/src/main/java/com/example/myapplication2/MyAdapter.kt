@@ -34,10 +34,6 @@ class MyAdapter(private val newsList: ArrayList<News> ) : RecyclerView.Adapter<M
 
         val titleImage : ShapeableImageView = itemView.findViewById(R.id.title_image)
         val tvHeading : TextView = itemView.findViewById(R.id.tvHeading)
-
-
-
-
     }
 
 }

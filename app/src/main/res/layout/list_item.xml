@@ -7,10 +7,10 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/title_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         android:src="@drawable/mercurio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,12 +18,13 @@
 
     <TextView
         android:id="@+id/tvHeading"
+        android:gravity="center"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        android:text="this planet is mercury"
+        android:text="Mercury"
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="32dp"

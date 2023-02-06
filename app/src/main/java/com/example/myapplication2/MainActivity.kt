@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var newArrayList: ArrayList<News>
     lateinit var imageId: Array<Int>
     lateinit var heading: Array<String>
+    lateinit var distance: Array<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +42,20 @@ class MainActivity : AppCompatActivity() {
             "Pluto",
         )
 
+        distance = arrayOf(
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+            "Distance from the sun",
+        )
+
+
+
         newRecyclerView = findViewById(R.id.my_recycle_view)
         newRecyclerView.layoutManager = LinearLayoutManager(this)
         newRecyclerView.setHasFixedSize(true)
@@ -54,7 +69,7 @@ class MainActivity : AppCompatActivity() {
     private fun getData() {
         for (i in imageId.indices) {
 
-            val news = News(imageId[i], heading[i])
+            val news = News(imageId[i], heading[i],distance[i])
             newArrayList.add(news)
 
 
